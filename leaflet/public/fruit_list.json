@@ -1,0 +1,165 @@
+{
+	"category": "summer_fruit",
+	"result": [
+		{
+			"pk": 1,
+			"name": "대부도/송산 캠벨포도",
+			"price": 19900,
+			"discount": 3000,
+			"comment_set": 41,
+			"like_set": 161
+		},
+		{
+			"pk": 2,
+			"name": "항공직송 블랙 사파이어 포도",
+			"price": 15900,
+			"discount": 3000,
+			"comment_set": 2,
+			"like_set": 54
+		},
+		{
+			"pk": 3,
+			"name": "미국산 체리",
+			"price": 19000,
+			"discount": 5000,
+			"comment_set": 785,
+			"like_set": 38
+		},
+		{
+			"pk": 4,
+			"name": "샤인머스캣",
+			"price": 29000,
+			"discount": 10000,
+			"comment_set": 761,
+			"like_set": 92
+		},
+		{
+			"pk": 5,
+			"name": "애플망고",
+			"price": 39000,
+			"discount": 2000,
+			"comment_set": 36,
+			"like_set": 21
+		},
+		{
+			"pk": 6,
+			"name": "대부도/송산 캠벨포도",
+			"price": 19900,
+			"discount": 3000,
+			"comment_set": 41,
+			"like_set": 161
+		},
+		{
+			"pk": 7,
+			"name": "항공직송 블랙 사파이어 포도",
+			"price": 15900,
+			"discount": 3000,
+			"comment_set": 2,
+			"like_set": 54
+		},
+		{
+			"pk": 8,
+			"name": "미국산 체리",
+			"price": 19000,
+			"discount": 5000,
+			"comment_set": 785,
+			"like_set": 38
+		},
+		{
+			"pk": 9,
+			"name": "샤인머스캣",
+			"price": 29000,
+			"discount": 10000,
+			"comment_set": 761,
+			"like_set": 92
+		},
+		{
+			"pk": 10,
+			"name": "애플망고",
+			"price": 39000,
+			"discount": 2000,
+			"comment_set": 36,
+			"like_set": 21
+		},
+		{
+			"pk": 11,
+			"name": "대부도/송산 캠벨포도",
+			"price": 19900,
+			"discount": 3000,
+			"comment_set": 41,
+			"like_set": 161
+		},
+		{
+			"pk": 12,
+			"name": "항공직송 블랙 사파이어 포도",
+			"price": 15900,
+			"discount": 3000,
+			"comment_set": 2,
+			"like_set": 54
+		},
+		{
+			"pk": 13,
+			"name": "미국산 체리",
+			"price": 19000,
+			"discount": 5000,
+			"comment_set": 785,
+			"like_set": 38
+		},
+		{
+			"pk": 14,
+			"name": "샤인머스캣",
+			"price": 29000,
+			"discount": 10000,
+			"comment_set": 761,
+			"like_set": 92
+		},
+		{
+			"pk": 15,
+			"name": "애플망고",
+			"price": 39000,
+			"discount": 2000,
+			"comment_set": 36,
+			"like_set": 21
+		},
+		{
+			"pk": 16,
+			"name": "대부도/송산 캠벨포도",
+			"price": 19900,
+			"discount": 3000,
+			"comment_set": 41,
+			"like_set": 161
+		},
+		{
+			"pk": 17,
+			"name": "항공직송 블랙 사파이어 포도",
+			"price": 15900,
+			"discount": 3000,
+			"comment_set": 2,
+			"like_set": 54
+		},
+		{
+			"pk": 18,
+			"name": "미국산 체리",
+			"price": 19000,
+			"discount": 5000,
+			"comment_set": 785,
+			"like_set": 38
+		},
+		{
+			"pk": 19,
+			"name": "샤인머스캣",
+			"price": 29000,
+			"discount": 10000,
+			"comment_set": 761,
+			"like_set": 92
+		},
+		{
+			"pk": 20,
+			"name": "애플망고",
+			"price": 39000,
+			"discount": 2000,
+			"comment_set": 36,
+			"like_set": 21
+		}
+	]
+}

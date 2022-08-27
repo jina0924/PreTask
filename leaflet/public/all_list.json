@@ -1,0 +1,362 @@
+[
+	{
+		"pk": 1,
+		"name": "[피코크] 아삭하고 시원한 포기김치 3.3kg",
+		"category": "healthy",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 2,
+		"name": "[피코크] 부채살찹스테이크",
+		"category": "healthy",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 3,
+		"name": "피코크 조선호텔특제육수 총각김치 1.5kg",
+		"category": "healthy",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 4,
+		"name": "[수린] 한우 국수전골 1,788g (총 2인분)",
+		"category": "healthy",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 5,
+		"name": "피코크 조선호텔특제육수 포기김치 4kg",
+		"category": "healthy",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 6,
+		"name": "[피코크] 아삭하고 시원한 포기김치 3.3kg",
+		"category": "healthy",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 7,
+		"name": "[피코크] 부채살찹스테이크",
+		"category": "healthy",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 8,
+		"name": "피코크 조선호텔특제육수 총각김치 1.5kg",
+		"category": "healthy",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 9,
+		"name": "[수린] 한우 국수전골 1,788g (총 2인분)",
+		"category": "healthy",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 10,
+		"name": "피코크 조선호텔특제육수 포기김치 4kg",
+		"category": "healthy",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 11,
+		"name": "대부도/송산 캠벨포도",
+		"category": "summer_fruit",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 12,
+		"name": "항공직송 블랙 사파이어 포도",
+		"category": "summer_fruit",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 13,
+		"name": "미국산 체리",
+		"category": "summer_fruit",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 14,
+		"name": "샤인머스캣",
+		"category": "summer_fruit",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 15,
+		"name": "애플망고",
+		"category": "summer_fruit",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 16,
+		"name": "대부도/송산 캠벨포도",
+		"category": "summer_fruit",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 17,
+		"name": "항공직송 블랙 사파이어 포도",
+		"category": "summer_fruit",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 18,
+		"name": "미국산 체리",
+		"category": "summer_fruit",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 19,
+		"name": "샤인머스캣",
+		"category": "summer_fruit",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 20,
+		"name": "애플망고",
+		"category": "summer_fruit",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 21,
+		"name": "[피코크XR고기] 한우차돌된장찌개 620g",
+		"category": "peacock",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 22,
+		"name": "밀푀유나베",
+		"category": "peacock",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 23,
+		"name": "티라미수 케이크(대용량) 680g",
+		"category": "peacock",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 24,
+		"name": "피코크 진한 육개장 리뉴얼 세트 500g*5봉",
+		"category": "peacock",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 25,
+		"name": "고창태양초고춧가루",
+		"category": "peacock",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 26,
+		"name": "[피코크XR고기] 한우차돌된장찌개 620g",
+		"category": "peacock",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 27,
+		"name": "밀푀유나베",
+		"category": "peacock",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 28,
+		"name": "티라미수 케이크(대용량) 680g",
+		"category": "peacock",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 29,
+		"name": "피코크 진한 육개장 리뉴얼 세트 500g*5봉",
+		"category": "peacock",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 30,
+		"name": "고창태양초고춧가루",
+		"category": "peacock",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 31,
+		"name": "오이맛고추 2kg(박스)",
+		"category": "fresh",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 32,
+		"name": "흙당근 3kg(박스)",
+		"category": "fresh",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 33,
+		"name": "의성통마늘 20개입 특,650g이상",
+		"category": "fresh",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 34,
+		"name": "파프리카 색상혼합/10입/1.3kg이상(박스)",
+		"category": "fresh",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 35,
+		"name": "먹기좋은 깐마늘 3kg/대 사이즈(봉)",
+		"category": "fresh",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	},
+	{
+		"pk": 36,
+		"name": "오이맛고추 2kg(박스)",
+		"category": "fresh",
+		"price": 19900,
+		"discount": 3000,
+		"comment_set": 41,
+		"like_set": 161
+	},
+	{
+		"pk": 37,
+		"name": "흙당근 3kg(박스)",
+		"category": "fresh",
+		"price": 15900,
+		"discount": 3000,
+		"comment_set": 2,
+		"like_set": 54
+	},
+	{
+		"pk": 38,
+		"name": "의성통마늘 20개입 특,650g이상",
+		"category": "fresh",
+		"price": 19000,
+		"discount": 5000,
+		"comment_set": 785,
+		"like_set": 38
+	},
+	{
+		"pk": 39,
+		"name": "파프리카 색상혼합/10입/1.3kg이상(박스)",
+		"category": "fresh",
+		"price": 29000,
+		"discount": 10000,
+		"comment_set": 761,
+		"like_set": 92
+	},
+	{
+		"pk": 40,
+		"name": "먹기좋은 깐마늘 3kg/대 사이즈(봉)",
+		"category": "fresh",
+		"price": 39000,
+		"discount": 2000,
+		"comment_set": 36,
+		"like_set": 21
+	}
+]
