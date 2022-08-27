@@ -12,7 +12,7 @@
           </div>
           <div class="item-name">{{ item.name }}</div>
           <div class="discount-div">
-            <span class="discount-badge">신세계포인트 적립 시 {{ item.discount }}원 할인</span>
+            <span class="discount-badge">신세계포인트 적립 시 {{ Number(item.discount).toLocaleString('ko-KR') }}원 할인</span>
           </div>
           <div class="row">
             <div class="icon-count col-6">
