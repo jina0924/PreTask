@@ -1,6 +1,6 @@
 <template>
   <div>
-    <item-list :item_list="healthy_list"></item-list>
+    <item-list :item_list="summer_fruit_list"></item-list>
   </div>
 </template>
 
@@ -14,13 +14,13 @@ export default {
     ItemList
   },
   computed: {
-    ...mapGetters(['healthy_list'])
+    ...mapGetters(['summer_fruit_list'])
   },
   methods: {
-    ...mapActions(['fetchHealthyList'])
+    ...mapActions(['fetchSummnerFruitList'])
   },
   created() {
-    this.fetchHealthyList()
+    this.fetchSummnerFruitList()
   }
 }
 </script>
