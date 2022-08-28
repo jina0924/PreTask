@@ -67,6 +67,6 @@ export default {
 }
 
 .navbar-collapse {
-  align-items: center;
+  flex-grow: unset;
 }
 </style>

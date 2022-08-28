@@ -1,0 +1,96 @@
+{
+	"page": 4,
+	"previous": 3,
+	"result": [
+		{
+			"pk": 31,
+			"name": "오이맛고추 2kg(박스)",
+			"category": "fresh",
+			"price": 19900,
+			"discount": 3000,
+			"comment_count": 41,
+			"like_count": 161
+		},
+		{
+			"pk": 32,
+			"name": "흙당근 3kg(박스)",
+			"category": "fresh",
+			"price": 15900,
+			"discount": 3000,
+			"comment_count": 2,
+			"like_count": 54
+		},
+		{
+			"pk": 33,
+			"name": "의성통마늘 20개입 특,650g이상",
+			"category": "fresh",
+			"price": 19000,
+			"discount": 5000,
+			"comment_count": 785,
+			"like_count": 38
+		},
+		{
+			"pk": 34,
+			"name": "파프리카 색상혼합/10입/1.3kg이상(박스)",
+			"category": "fresh",
+			"price": 29000,
+			"discount": 10000,
+			"comment_count": 761,
+			"like_count": 92
+		},
+		{
+			"pk": 35,
+			"name": "먹기좋은 깐마늘 3kg/대 사이즈(봉)",
+			"category": "fresh",
+			"price": 39000,
+			"discount": 2000,
+			"comment_count": 36,
+			"like_count": 21
+		},
+		{
+			"pk": 36,
+			"name": "오이맛고추 2kg(박스)",
+			"category": "fresh",
+			"price": 19900,
+			"discount": 3000,
+			"comment_count": 41,
+			"like_count": 161
+		},
+		{
+			"pk": 37,
+			"name": "흙당근 3kg(박스)",
+			"category": "fresh",
+			"price": 15900,
+			"discount": 3000,
+			"comment_count": 2,
+			"like_count": 54
+		},
+		{
+			"pk": 38,
+			"name": "의성통마늘 20개입 특,650g이상",
+			"category": "fresh",
+			"price": 19000,
+			"discount": 5000,
+			"comment_count": 785,
+			"like_count": 38
+		},
+		{
+			"pk": 39,
+			"name": "파프리카 색상혼합/10입/1.3kg이상(박스)",
+			"category": "fresh",
+			"price": 29000,
+			"discount": 10000,
+			"comment_count": 761,
+			"like_count": 92
+		},
+		{
+			"pk": 40,
+			"name": "먹기좋은 깐마늘 3kg/대 사이즈(봉)",
+			"category": "fresh",
+			"price": 39000,
+			"discount": 2000,
+			"comment_count": 36,
+			"like_count": 21
+		}
+	]
+}

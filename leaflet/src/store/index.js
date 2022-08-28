@@ -27,21 +27,21 @@ export default createStore({
     // SET_ITEM_LIST: (state, item_list) => state.item_list = item_list
   },
   actions: {
-    fetchAllList({ commit }) {
+    fetchAllList({ commit }, page) {
       axios({
-        url: '/all_list.json',
+        url: `/all_list_${page}.json`,
         method: 'get',
       })
       .then(res =>
         // commit('SET_ALL_LIST', res.data)
-        commit('SET_ALL_LIST', res.data)
+        commit('SET_ALL_LIST', res.data.result)
       )
       .catch(err => console.log(err.response))
     },
 
-    fetchHealthyList({ commit }) {
+    fetchHealthyList({ commit }, page) {
       axios({
-        url: '/healthy_list.json',
+        url: `/healthy_list_${page}.json`,
         method: 'get',
       })
       .then(res =>
@@ -50,9 +50,9 @@ export default createStore({
       .catch(err => console.log(err.response))
     },
 
-    fetchSummnerFruitList({ commit }) {
+    fetchSummnerFruitList({ commit }, page) {
       axios({
-        url: '/fruit_list.json',
+        url: `/fruit_list_${page}.json`,
         method: 'get',
       })
       .then(res =>
@@ -61,9 +61,9 @@ export default createStore({
       .catch(err => console.log(err.response))
     },
 
-    fetchPeacockList({ commit }) {
+    fetchPeacockList({ commit }, page) {
       axios({
-        url: '/peacock_list.json',
+        url: `/peacock_list_${page}.json`,
         method: 'get',
       })
       .then(res =>
@@ -72,9 +72,9 @@ export default createStore({
       .catch(err => console.log(err.response))
     },
 
-    fetchFreshList({ commit }) {
+    fetchFreshList({ commit }, page) {
       axios({
-        url: '/fresh_list.json',
+        url: `/fresh_list_${page}.json`,
         method: 'get',
       })
       .then(res =>

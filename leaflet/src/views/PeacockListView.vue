@@ -20,7 +20,7 @@ export default {
     ...mapActions(['fetchPeacockList'])
   },
   created() {
-    this.fetchPeacockList()
+    this.fetchPeacockList(1)
   }
 }
 </script>

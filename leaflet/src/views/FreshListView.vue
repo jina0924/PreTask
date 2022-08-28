@@ -20,7 +20,7 @@ export default {
     ...mapActions(['fetchFreshList'])
   },
   created() {
-    this.fetchFreshList()
+    this.fetchFreshList(1)
   }
 }
 </script>

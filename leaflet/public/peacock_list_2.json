@@ -1,0 +1,87 @@
+{
+	"category": "peacock",
+	"page": 2,
+	"previous": 1,
+	"result": [
+		{
+			"pk": 11,
+			"name": "[피코크XR고기] 한우차돌된장찌개 620g",
+			"price": 19900,
+			"discount": 3000,
+			"comment_count": 41,
+			"like_count": 161
+		},
+		{
+			"pk": 12,
+			"name": "밀푀유나베",
+			"price": 15900,
+			"discount": 3000,
+			"comment_count": 2,
+			"like_count": 54
+		},
+		{
+			"pk": 13,
+			"name": "티라미수 케이크(대용량) 680g",
+			"price": 19000,
+			"discount": 5000,
+			"comment_count": 785,
+			"like_count": 38
+		},
+		{
+			"pk": 14,
+			"name": "피코크 진한 육개장 리뉴얼 세트 500g*5봉",
+			"price": 29000,
+			"discount": 10000,
+			"comment_count": 761,
+			"like_count": 92
+		},
+		{
+			"pk": 15,
+			"name": "고창태양초고춧가루",
+			"price": 39000,
+			"discount": 2000,
+			"comment_count": 36,
+			"like_count": 21
+		},
+		{
+			"pk": 16,
+			"name": "[피코크XR고기] 한우차돌된장찌개 620g",
+			"price": 19900,
+			"discount": 3000,
+			"comment_count": 41,
+			"like_count": 161
+		},
+		{
+			"pk": 17,
+			"name": "밀푀유나베",
+			"price": 15900,
+			"discount": 3000,
+			"comment_count": 2,
+			"like_count": 54
+		},
+		{
+			"pk": 18,
+			"name": "티라미수 케이크(대용량) 680g",
+			"price": 19000,
+			"discount": 5000,
+			"comment_count": 785,
+			"like_count": 38
+		},
+		{
+			"pk": 19,
+			"name": "피코크 진한 육개장 리뉴얼 세트 500g*5봉",
+			"price": 29000,
+			"discount": 10000,
+			"comment_count": 761,
+			"like_count": 92
+		},
+		{
+			"pk": 20,
+			"name": "고창태양초고춧가루",
+			"price": 39000,
+			"discount": 2000,
+			"comment_count": 36,
+			"like_count": 21
+		}
+	]
+}

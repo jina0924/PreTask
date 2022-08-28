@@ -20,7 +20,7 @@ export default {
     ...mapActions(['fetchHealthyList'])
   },
   created() {
-    this.fetchHealthyList()
+    this.fetchHealthyList(1)
   }
 }
 </script>

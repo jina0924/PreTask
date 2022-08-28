@@ -1,5 +1,5 @@
 <template>
-  <div class="row list-section offset-xl-1 col-xl-10">
+  <div class="row list-section offset-xl-1 col-xl-10" @scroll="handleItemListScroll">
     <div v-for="item in item_list" :key="item.pk" class="card">
       <div class="row card-inside">
         <div class="item-img col-4">
@@ -17,11 +17,11 @@
           <div class="row">
             <div class="icon-count col-6">
               <span class="material-symbols-outlined like-icon">heart_plus</span>
-              <span>{{ item.like_set }}</span>
+              <span>{{ item.like_count }}</span>
             </div>
             <div class="icon-count col-6">
               <span class="material-symbols-outlined comment-icon">mode_comment</span>
-              <span>{{ item.comment_set }}</span>
+              <span>{{ item.comment_count }}</span>
             </div>
           </div>
         </div>
@@ -36,6 +36,24 @@ export default {
   props: {
     item_list: Array,
   },
+  // data() {
+  //   return {
+  //     items: this.item_list.slice(0, 10)
+  //   }
+  // },
+  methods: {
+    handleItemListScroll(event) {
+      const { scrollHeight, scrollTop, clientHeight } = event.target
+      const isBottom = scrollHeight === scrollTop + clientHeight
+      if (isBottom) {
+        this.handleLoadMore()
+      }
+    },
+    
+    // handleLoadMore() {
+    //   if (this.)
+    // }
+  }
 }
 </script>
 

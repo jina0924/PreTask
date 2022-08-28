@@ -20,7 +20,7 @@ export default {
     ...mapActions(['fetchSummnerFruitList'])
   },
   created() {
-    this.fetchSummnerFruitList()
+    this.fetchSummnerFruitList(1)
   }
 }
 </script>

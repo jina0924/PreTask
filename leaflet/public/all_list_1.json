@@ -1,0 +1,96 @@
+{
+	"page": 1,
+	"next": 2,
+	"result": [
+		{
+			"pk": 1,
+			"name": "[피코크] 아삭하고 시원한 포기김치 3.3kg",
+			"category": "healthy",
+			"price": 19900,
+			"discount": 3000,
+			"comment_count": 41,
+			"like_count": 161
+		},
+		{
+			"pk": 2,
+			"name": "[피코크] 부채살찹스테이크",
+			"category": "healthy",
+			"price": 15900,
+			"discount": 3000,
+			"comment_count": 2,
+			"like_count": 54
+		},
+		{
+			"pk": 3,
+			"name": "피코크 조선호텔특제육수 총각김치 1.5kg",
+			"category": "healthy",
+			"price": 19000,
+			"discount": 5000,
+			"comment_count": 785,
+			"like_count": 38
+		},
+		{
+			"pk": 4,
+			"name": "[수린] 한우 국수전골 1,788g (총 2인분)",
+			"category": "healthy",
+			"price": 29000,
+			"discount": 10000,
+			"comment_count": 761,
+			"like_count": 92
+		},
+		{
+			"pk": 5,
+			"name": "피코크 조선호텔특제육수 포기김치 4kg",
+			"category": "healthy",
+			"price": 39000,
+			"discount": 2000,
+			"comment_count": 36,
+			"like_count": 21
+		},
+		{
+			"pk": 6,
+			"name": "[피코크] 아삭하고 시원한 포기김치 3.3kg",
+			"category": "healthy",
+			"price": 19900,
+			"discount": 3000,
+			"comment_count": 41,
+			"like_count": 161
+		},
+		{
+			"pk": 7,
+			"name": "[피코크] 부채살찹스테이크",
+			"category": "healthy",
+			"price": 15900,
+			"discount": 3000,
+			"comment_count": 2,
+			"like_count": 54
+		},
+		{
+			"pk": 8,
+			"name": "피코크 조선호텔특제육수 총각김치 1.5kg",
+			"category": "healthy",
+			"price": 19000,
+			"discount": 5000,
+			"comment_count": 785,
+			"like_count": 38
+		},
+		{
+			"pk": 9,
+			"name": "[수린] 한우 국수전골 1,788g (총 2인분)",
+			"category": "healthy",
+			"price": 29000,
+			"discount": 10000,
+			"comment_count": 761,
+			"like_count": 92
+		},
+		{
+			"pk": 10,
+			"name": "피코크 조선호텔특제육수 포기김치 4kg",
+			"category": "healthy",
+			"price": 39000,
+			"discount": 2000,
+			"comment_count": 36,
+			"like_count": 21
+		}
+	]
+}
