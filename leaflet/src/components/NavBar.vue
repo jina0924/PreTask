@@ -3,7 +3,7 @@
     <!-- <div class="container-fluid"> -->
       
       <div class="link-icon-group">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-back" href="#">
           <span class="material-symbols-outlined">west</span>
         </a>
         <router-link :to="{ name: 'home' }" class="home-btn">
@@ -48,6 +48,12 @@ export default {
   align-items: center;
 }
 
+.navbar-back{
+  color: black;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
 .home-btn {
   color: black;
 }
@@ -56,12 +62,7 @@ export default {
   font-weight: 500;
 }
 
-/* .navbar-item-group {
-  justify-content: end;
-} */
-
 .navbar-expand-lg {
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
