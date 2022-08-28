@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @scroll="handleItemListScroll" class="item-list">
     <item-list :item_list="summer_fruit_list" :page_info="summer_fruit_page"></item-list>
   </div>
 </template>
@@ -17,7 +17,19 @@ export default {
     ...mapGetters(['summer_fruit_list', 'summer_fruit_page'])
   },
   methods: {
-    ...mapActions(['fetchSummnerFruitList'])
+    ...mapActions(['fetchSummnerFruitList']),
+    handleItemListScroll(event) {
+      const { scrollHeight, scrollTop, clientHeight } = event.target
+      const isBottom = scrollHeight === scrollTop + clientHeight
+      if (isBottom) {
+        setTimeout(() => this.handleLoadMore(), 1000)
+      }
+    },
+    handleLoadMore() {
+      if (this.summer_fruit_page.next) {
+        this.fetchSummnerFruitList(this.summer_fruit_page.page + 1)
+      }
+    }
   },
   created() {
     this.fetchSummnerFruitList(1)
@@ -25,6 +37,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.item-list {
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
 </style>

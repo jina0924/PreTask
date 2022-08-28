@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @scroll="handleItemListScroll" class="item-list">
     <item-list :item_list='all_list' :page_info='all_page'></item-list>
   </div>
 </template>
@@ -17,7 +17,19 @@ export default {
     ...mapGetters(['all_list', 'all_page'])
   },
   methods: {
-    ...mapActions(['fetchAllList'])
+    ...mapActions(['fetchAllList']),
+    handleItemListScroll(event) {
+      const { scrollHeight, scrollTop, clientHeight } = event.target
+      const isBottom = scrollHeight === scrollTop + clientHeight
+      if (isBottom) {
+        setTimeout(() => this.handleLoadMore(), 1000)
+      }
+    },
+    handleLoadMore() {
+      if (this.all_page.next) {
+        this.fetchAllList(this.all_page.page + 1)
+      }
+    }
   },
   created() {
     this.fetchAllList(1)
@@ -25,6 +37,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.item-list {
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
 </style>

@@ -35,8 +35,10 @@ export default createStore({
         previous: all_object.previous,
         next: all_object.next,
       }
-      if (all_object.page.page > 1) {
-        state.all_list.push(all_object.result)
+      if (state.all_page.page > 1) {
+        for (const result of all_object.result) {
+          state.all_list.push(result)
+        }
       } else {
         state.all_list = all_object.result
       }
@@ -47,8 +49,10 @@ export default createStore({
         previous: healthy_object.previous,
         next: healthy_object.next,
       }
-      if (healthy_object.page.page > 1) {
-        state.healthy_list.push(healthy_object.result)
+      if (state.healthy_page.page > 1) {
+        for (const result of healthy_object.result) {
+          state.healthy_list.push(result)
+        }
       } else {
         state.healthy_list = healthy_object.result
       }
@@ -59,7 +63,13 @@ export default createStore({
         previous: summer_fruit_object.previous,
         next: summer_fruit_object.next,
       }
-      state.summer_fruit_list = summer_fruit_object.result
+      if (state.summer_fruit_page.page > 1) {
+        for (const result of summer_fruit_object.result) {
+          state.summer_fruit_list.push(result)
+        }
+      } else {
+        state.summer_fruit_list = summer_fruit_object.result
+      }
     },
     SET_PEACOCK_LIST: (state, peacock_object) => {
       state.peacock_page = {
@@ -67,7 +77,13 @@ export default createStore({
         previous: peacock_object.previous,
         next: peacock_object.next,
       }
-      state.peacock_list = peacock_object.result
+      if (state.peacock_page.page > 1) {
+        for (const result of peacock_object.result) {
+          state.peacock_list.push(result)
+        }
+      } else {
+        state.peacock_list = peacock_object.result
+      }
     },
     SET_FRESH_LIST: (state, fresh_object) => {
       state.fresh_page = {
@@ -75,7 +91,6 @@ export default createStore({
         previous: fresh_object.previous,
         next: fresh_object.next,    
       }
-      // console.log(state.fresh_page)
       if (state.fresh_page.page > 1) {
         for (const result of fresh_object.result) {
           state.fresh_list.push(result)

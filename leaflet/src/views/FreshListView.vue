@@ -19,7 +19,6 @@ export default {
   methods: {
     ...mapActions(['fetchFreshList']),
     handleItemListScroll(event) {
-
       const { scrollHeight, scrollTop, clientHeight } = event.target
       const isBottom = scrollHeight === scrollTop + clientHeight
       if (isBottom) {
@@ -32,11 +31,6 @@ export default {
       }
     }
   },
-  // watch: {
-  //   fresh_list() {
-  //     this.fresh_list
-  //   }
-  // },
   created() {
     this.fetchFreshList(1)
   }
