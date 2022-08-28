@@ -1,6 +1,6 @@
 <template>
   <div>
-    <item-list :item_list="healthy_list"></item-list>
+    <item-list :item_list="healthy_list" :page_info="healthy_page"></item-list>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     ItemList
   },
   computed: {
-    ...mapGetters(['healthy_list'])
+    ...mapGetters(['healthy_list', 'healthy_page'])
   },
   methods: {
     ...mapActions(['fetchHealthyList'])

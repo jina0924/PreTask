@@ -4,26 +4,86 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     all_list: [],
+    all_page: {},
     healthy_list: [],
+    healthy_page: {},
     summer_fruit_list: [],
+    summer_fruit_page: {},
     peacock_list: [],
+    peacock_page: {},
     fresh_list: [],
+    fresh_page: {},
     // item_list: []
   },
   getters: {
     all_list: state => state.all_list,
+    all_page: state => state.all_page,
     healthy_list: state => state.healthy_list,
+    healthy_page: state => state.healthy_page,
     summer_fruit_list: state => state.summer_fruit_list,
+    summer_fruit_page: state => state.summer_fruit_page,
     peacock_list: state => state.peacock_list,
+    peacock_page: state => state.peacock_page,
     fresh_list: state => state.fresh_list,
+    fresh_page: state => state.fresh_page,
     // item_list: state => state.item_list
   },
   mutations: {
-    SET_ALL_LIST: (state, all_list) => state.all_list = all_list,
-    SET_HEALTHY_LIST: (state, healthy_list) => state.healthy_list = healthy_list,
-    SET_SUMMER_FRUIT_LIST: (state, summer_fruit_list) => state.summer_fruit_list = summer_fruit_list,
-    SET_PEACOCK_LIST: (state, peacock_list) => state.peacock_list = peacock_list,
-    SET_FRESH_LIST: (state, fresh_list) => state.fresh_list = fresh_list,
+    SET_ALL_LIST: (state, all_object) => {
+      state.all_page = {
+        page: all_object.page,
+        previous: all_object.previous,
+        next: all_object.next,
+      }
+      if (all_object.page.page > 1) {
+        state.all_list.push(all_object.result)
+      } else {
+        state.all_list = all_object.result
+      }
+    },
+    SET_HEALTHY_LIST: (state, healthy_object) => {
+      state.healthy_page = {
+        page: healthy_object.page,
+        previous: healthy_object.previous,
+        next: healthy_object.next,
+      }
+      if (healthy_object.page.page > 1) {
+        state.healthy_list.push(healthy_object.result)
+      } else {
+        state.healthy_list = healthy_object.result
+      }
+    },
+    SET_SUMMER_FRUIT_LIST: (state, summer_fruit_object) => {
+      state.summer_fruit_page = {
+        page: summer_fruit_object.page,
+        previous: summer_fruit_object.previous,
+        next: summer_fruit_object.next,
+      }
+      state.summer_fruit_list = summer_fruit_object.result
+    },
+    SET_PEACOCK_LIST: (state, peacock_object) => {
+      state.peacock_page = {
+        page: peacock_object.page,
+        previous: peacock_object.previous,
+        next: peacock_object.next,
+      }
+      state.peacock_list = peacock_object.result
+    },
+    SET_FRESH_LIST: (state, fresh_object) => {
+      state.fresh_page = {
+        page: fresh_object.page,
+        previous: fresh_object.previous,
+        next: fresh_object.next,    
+      }
+      // console.log(state.fresh_page)
+      if (state.fresh_page.page > 1) {
+        for (const result of fresh_object.result) {
+          state.fresh_list.push(result)
+        }
+      } else {
+        state.fresh_list = fresh_object.result
+      }
+    },
     // SET_ITEM_LIST: (state, item_list) => state.item_list = item_list
   },
   actions: {
@@ -33,8 +93,7 @@ export default createStore({
         method: 'get',
       })
       .then(res =>
-        // commit('SET_ALL_LIST', res.data)
-        commit('SET_ALL_LIST', res.data.result)
+        commit('SET_ALL_LIST', res.data)
       )
       .catch(err => console.log(err.response))
     },
@@ -45,7 +104,7 @@ export default createStore({
         method: 'get',
       })
       .then(res =>
-        commit('SET_HEALTHY_LIST', res.data.result)
+        commit('SET_HEALTHY_LIST', res.data)
       )
       .catch(err => console.log(err.response))
     },
@@ -56,7 +115,7 @@ export default createStore({
         method: 'get',
       })
       .then(res =>
-        commit('SET_SUMMER_FRUIT_LIST', res.data.result)
+        commit('SET_SUMMER_FRUIT_LIST', res.data)
       )
       .catch(err => console.log(err.response))
     },
@@ -67,7 +126,7 @@ export default createStore({
         method: 'get',
       })
       .then(res =>
-        commit('SET_PEACOCK_LIST', res.data.result)
+        commit('SET_PEACOCK_LIST', res.data)
       )
       .catch(err => console.log(err.response))
     },
@@ -78,7 +137,7 @@ export default createStore({
         method: 'get',
       })
       .then(res =>
-        commit('SET_FRESH_LIST', res.data.result)
+        commit('SET_FRESH_LIST', res.data)
       )
       .catch(err => console.log(err.response))
     },

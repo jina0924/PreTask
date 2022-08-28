@@ -1,6 +1,6 @@
 <template>
   <div>
-    <item-list :item_list='all_list'></item-list>
+    <item-list :item_list='all_list' :page_info='all_page'></item-list>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     ItemList,
   },
   computed: {
-    ...mapGetters(['all_list'])
+    ...mapGetters(['all_list', 'all_page'])
   },
   methods: {
     ...mapActions(['fetchAllList'])

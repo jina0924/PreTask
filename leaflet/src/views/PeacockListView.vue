@@ -1,6 +1,6 @@
 <template>
   <div>
-    <item-list :item_list="peacock_list"></item-list>
+    <item-list :item_list="peacock_list" :page_info="peacock_page"></item-list>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     ItemList
   },
   computed: {
-    ...mapGetters(['peacock_list'])
+    ...mapGetters(['peacock_list', 'peacock_page'])
   },
   methods: {
     ...mapActions(['fetchPeacockList'])

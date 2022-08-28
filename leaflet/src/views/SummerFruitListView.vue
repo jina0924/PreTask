@@ -1,6 +1,6 @@
 <template>
   <div>
-    <item-list :item_list="summer_fruit_list"></item-list>
+    <item-list :item_list="summer_fruit_list" :page_info="summer_fruit_page"></item-list>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     ItemList
   },
   computed: {
-    ...mapGetters(['summer_fruit_list'])
+    ...mapGetters(['summer_fruit_list', 'summer_fruit_page'])
   },
   methods: {
     ...mapActions(['fetchSummnerFruitList'])

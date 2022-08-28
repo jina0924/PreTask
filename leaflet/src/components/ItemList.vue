@@ -1,5 +1,5 @@
 <template>
-  <div class="row list-section offset-xl-1 col-xl-10" @scroll="handleItemListScroll">
+  <div class="row list-section offset-xl-1 col-xl-10">
     <div v-for="item in item_list" :key="item.pk" class="card">
       <div class="row card-inside">
         <div class="item-img col-4">
@@ -31,10 +31,13 @@
 </template>
 
 <script>
+// import { mapActions } from 'vuex'
+
 export default {
   name: 'ItemList',
   props: {
     item_list: Array,
+    page_info: Object,
   },
   // data() {
   //   return {
@@ -42,16 +45,11 @@ export default {
   //   }
   // },
   methods: {
-    handleItemListScroll(event) {
-      const { scrollHeight, scrollTop, clientHeight } = event.target
-      const isBottom = scrollHeight === scrollTop + clientHeight
-      if (isBottom) {
-        this.handleLoadMore()
-      }
-    },
-    
+    // ...mapActions([]),   
     // handleLoadMore() {
-    //   if (this.)
+    //   if (this.page.next) {
+    //     this.
+    //   }
     // }
   }
 }
