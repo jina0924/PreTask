@@ -38,8 +38,5 @@ export default {
 </script>
 
 <style scoped>
-.item-list {
-  height: calc(100vh - 50px);
-  overflow: auto;
-}
+@import "@/statics/scrollbar.css";
 </style>

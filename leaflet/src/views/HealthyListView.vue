@@ -19,7 +19,6 @@ export default {
   methods: {
     ...mapActions(['fetchHealthyList']),
     handleItemListScroll(event) {
-      console.log(event)
       const { scrollHeight, scrollTop, clientHeight } = event.target
       const isBottom = scrollHeight === scrollTop + clientHeight
       if (isBottom) {
@@ -34,13 +33,10 @@ export default {
   },
   created() {
     this.fetchHealthyList(1)
-  }
+  },
 }
 </script>
 
 <style scoped>
-.item-list {
-  height: calc(100vh - 50px);
-  overflow: auto;
-}
+@import "@/statics/scrollbar.css";
 </style>

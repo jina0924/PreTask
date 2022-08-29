@@ -31,7 +31,7 @@
 </template>
 
 <script>
-// import { mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'ItemList',
@@ -45,12 +45,23 @@ export default {
   //   }
   // },
   methods: {
-    // ...mapActions([]),   
-    // handleLoadMore() {
-    //   if (this.page.next) {
-    //     this.
-    //   }
-    // }
+    ...mapActions(['fetchAllList', 'fetchHealthyList', 'fetchSummnerFruitList', 'fetchPeacockList', 'fetchFreshList']),
+  },
+  updated() {
+    const element = document.querySelector('.list-section')
+    if (element.clientHeight < window.innerHeight) {
+      if (this.$route.name === 'home') {
+        this.fetchAllList(2)
+      } else if (this.$route.name ==='healthy') {
+        this.fetchHealthyList(2)
+      } else if (this.$route.name === 'summerFruit') {
+        this.fetchSummnerFruitList(2)
+      } else if (this.$route.name === 'peacock') {
+        this.fetchPeacockList(2)
+      } else if (this.$route.name === 'fresh') {
+        this.fetchFreshList(2)
+      }
+    }
   }
 }
 </script>
