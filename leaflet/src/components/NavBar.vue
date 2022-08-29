@@ -62,6 +62,10 @@ export default {
   font-weight: 500;
 }
 
+.navbar-toggler {
+  border-style: none;
+}
+
 .navbar-expand-lg {
   justify-content: space-between;
 }
