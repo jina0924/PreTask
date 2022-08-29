@@ -13,7 +13,7 @@ export default createStore({
     peacock_page: {},
     fresh_list: [],
     fresh_page: {},
-    // item_list: []
+    is_category_active: true,
   },
   getters: {
     all_list: state => state.all_list,
@@ -26,7 +26,7 @@ export default createStore({
     peacock_page: state => state.peacock_page,
     fresh_list: state => state.fresh_list,
     fresh_page: state => state.fresh_page,
-    // item_list: state => state.item_list
+    is_category_active: state => state.is_category_active,
   },
   mutations: {
     SET_ALL_LIST: (state, all_object) => {
@@ -99,7 +99,7 @@ export default createStore({
         state.fresh_list = fresh_object.result
       }
     },
-    // SET_ITEM_LIST: (state, item_list) => state.item_list = item_list
+    SET_CATEGORY_ACTIVE: (state, status) => state.is_category_active = status,
   },
   actions: {
     fetchAllList({ commit }, page) {
@@ -156,7 +156,9 @@ export default createStore({
       )
       .catch(err => console.log(err.response))
     },
+
+    fetchCategoryActive({ commit }, status) {
+      commit('SET_CATEGORY_ACTIVE', status)
+    }
   },
-  // modules: {
-  // }
 })

@@ -34,17 +34,6 @@ export default {
 </script>
 
 <style scoped>
-.wrap {
-  /* width: 98%; */
-  /* overflow-x: auto; */
-  /* white-space: nowrap; */
-  /* -ms-overflow-style: none;  IE and Edge */ 
-  /* scrollbar-width: none; Firefox */
-  /* margin-top: 1rem; */
-}
-/* .wrap::-webkit-scrollbar {
-  display: none;
-} */
 
 ul {
   padding-left: 1rem;
@@ -63,7 +52,6 @@ ul::-webkit-scrollbar {
 li {
   /* display:inline-block; */
   margin-right: 1.5rem;
-  /* color: black; */
   /* -webkit-box-flex: 1; */
   flex-grow: 1;
   text-align: center;

@@ -13,13 +13,25 @@ export default {
   components: {
     ItemList
   },
+  data() {
+    return {
+      preScroll: 0
+    }
+  },
   computed: {
     ...mapGetters(['peacock_list', 'peacock_page'])
   },
   methods: {
-    ...mapActions(['fetchPeacockList']),
+    ...mapActions(['fetchPeacockList', 'fetchCategoryActive']),
     handleItemListScroll(event) {
       const { scrollHeight, scrollTop, clientHeight } = event.target
+      if (this.preScroll < scrollTop) {
+        this.fetchCategoryActive(false)
+        this.preScroll = scrollTop
+      } else if (this.preScroll > scrollTop) {
+        this.fetchCategoryActive(true)
+        this.preScroll = scrollTop
+      }
       const isBottom = scrollHeight === scrollTop + clientHeight
       if (isBottom) {
         setTimeout(() => this.handleLoadMore(), 1000)
