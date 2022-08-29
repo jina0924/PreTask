@@ -104,3 +104,11 @@ https://labs.brandi.co.kr/2019/02/08/janghj.html
 https://coconutstd.github.io/posts/s3-hosting/
 
 https://zzang9ha.tistory.com/358
+
+
+
+
+
+스크롤 방향 감지하기
+
+https://mong-blog.tistory.com/entry/scroll-%EB%B0%A9%ED%96%A5-%EA%B0%90%EC%A7%80%ED%95%98%EA%B8%B0-with-js
