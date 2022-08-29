@@ -19,6 +19,7 @@ export default {
   methods: {
     ...mapActions(['fetchHealthyList']),
     handleItemListScroll(event) {
+      console.log(event)
       const { scrollHeight, scrollTop, clientHeight } = event.target
       const isBottom = scrollHeight === scrollTop + clientHeight
       if (isBottom) {
