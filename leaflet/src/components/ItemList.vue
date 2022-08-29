@@ -39,11 +39,6 @@ export default {
     item_list: Array,
     page_info: Object,
   },
-  // data() {
-  //   return {
-  //     items: this.item_list.slice(0, 10)
-  //   }
-  // },
   methods: {
     ...mapActions(['fetchAllList', 'fetchHealthyList', 'fetchSummnerFruitList', 'fetchPeacockList', 'fetchFreshList']),
   },
