@@ -2,6 +2,74 @@
 
 [toc]
 
+## [Python] JSON 파일 생성하기
+
+```python
+import json
+
+all_data = {}
+
+price = [19900, 15900, 19000, 29000, 39000]
+discount = [3000, 3000, 5000, 10000, 2000]
+comment_set = [41, 2, 785, 761, 36]
+like_set = [161, 54, 38, 92, 21]
+
+category = ['healthy', 'summer_fruit', 'peacock', 'fresh']
+
+healty_name = ['[피코크] 아삭하고 시원한 포기김치 3.3kg', '[피코크] 부채살찹스테이크', '피코크 조선호텔특제육수 총각김치 1.5kg', '[수린] 한우 국수전골 1,788g (총 2인분)', '피코크 조선호텔특제육수 포기김치 4kg']
+fruit_name = ['대부도/송산 캠벨포도', '항공직송 블랙 사파이어 포도', '미국산 체리', '샤인머스캣', '애플망고']
+peacock_name = ['[피코크XR고기] 한우차돌된장찌개 620g', '밀푀유나베', '티라미수 케이크(대용량) 680g', '피코크 진한 육개장 리뉴얼 세트 500g*5봉', '고창태양초고춧가루']
+fresh_name = ['오이맛고추 2kg(박스)', '흙당근 3kg(박스)', '의성통마늘 20개입 특,650g이상', '파프리카 색상혼합/10입/1.3kg이상(박스)', '먹기좋은 깐마늘 3kg/대 사이즈(봉)']
+
+pk = 31
+page = 4
+idx = 3
+all_data['page'] = page
+all_data['previous'] = page - 1
+all_data['result'] = []
+for i in range(10):
+    item_data = {}
+    item_data['pk'] = pk
+    if idx == 0:
+        item_data['name'] = healty_name[i % 5]
+        item_data['category'] = 'healthy'
+    if idx == 1:
+        item_data['name'] = fruit_name[i % 5]
+        item_data['category'] = 'summer_fruit'
+    if idx == 2:
+        item_data['name'] = peacock_name[i % 5]
+        item_data['category'] = 'peacock'
+    if idx == 3:
+        item_data['name'] = fresh_name[i % 5]
+        item_data['category'] = 'fresh'
+    item_data['price'] = price[i % 5]
+    item_data['discount'] = discount[i % 5]
+    item_data['comment_set'] = comment_set[i % 5]
+    item_data['like_set'] = like_set[i % 5]
+    all_data['result'].append(item_data)
+    pk += 1
+
+with open('all_list_4.json', 'w', encoding="utf-8") as make_file:
+    json.dump(all_data, make_file, ensure_ascii=False, indent="\t")
+```
+
+- 기능
+  - 파이썬으로 json 더미 데이터 생성
+- 포인트
+  1. `import json`
+     - `JSON`파일을 만들기 위해 라이브러리 호출
+  2. `all_data = {}`
+     - 전체 리스트를 감싸 객체 형태로 만듦
+  3. `with open('all_list_4.json', 'w', encoding="utf-8")`
+     - `with`문으로 적는 이유 : `open`과 `close`를 자동으로 처리하기 위해
+     - `utf-8` 인코딩으로 저장
+     - `all_list_4.json`이란 파일이 존재하지 않을 경우 해당 이름으로 새 파일 생성
+  4. `json.dump(all_data, make_file, ensure_ascii=False, indent="\t")`
+     - `ensure_ascii=False` : 이스케이프 문자로 표시하지 않고 한글로 출력함
+     - `indent="\t"` : json 데이터를 눈으로 보기 쉽게 만들어줌
+
+
+
 ## 무한 스크롤
 
 ```vue
@@ -288,3 +356,15 @@ export default {
   1. 변화를 감지할 컨텐츠에 `v-if` 걸기
   2. `data`에 `preScroll` 변수를 선언하여 스크롤할 때마다 이전 스크롤 위치를 저장해둠
   3. 스크롤 이벤트 발생 시 현재 스크롤 위치와 이전 스크롤 위치를 비교하여 스크롤 업인지 다운인지 판단함
+
+
+
+## S3 서버리스 배포 방법
+
+https://preiner.tistory.com/12
+
+https://labs.brandi.co.kr/2019/02/08/janghj.html
+
+https://coconutstd.github.io/posts/s3-hosting/
+
+https://zzang9ha.tistory.com/358
